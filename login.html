@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to bottom, #f5eded,#ffb6b1, #ffa09a);
+        }
+        .login-table {
+            border: 2px solid #ccc;
+            padding: 15px;
+            text-align: center;
+            font-family: Arial;
+            background-color: #ffffff; 
+            border-radius: 10px; 
+        }
+            .login-button {
+            background-color: #ff8078; 
+            color: #ffffff;
+            padding: 5px 15px; 
+            border: none; 
+            border-radius: 10px;
+            cursor: pointer; 
+            font-size: 16px; 
+            margin: 5px; 
+        }
+            .register-button {
+            background-color: #ff8078; 
+            color: #ffffff;
+            padding: 5px 15px; 
+            border: none; 
+            border-radius: 10px;
+            cursor: pointer; 
+            font-size: 16px; 
+            margin: 5px; 
+
+        }
+        form {
+            text-align: center;
+        }
+        .forgot-password {
+            font-size: 12px; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="login-table">
+        <form action="Login.php" method="POST" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td colspan="3"><center><strong><h1>Login</h1></strong></center></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" name="Username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>&nbsp;</td>
+                    <td><input type="password" name="Password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td align="right"><a href="ForgotPassword.html" class="forgot-password"> Forgot Password? </a></td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td align="right"><input type="submit" name="Register" value="Register" class="register-button" /> &nbsp;<input type="submit" name="Login" value="Login" class="login-button"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
